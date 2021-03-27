@@ -242,8 +242,11 @@ https://www.youtube.com/watch?v=WVLhm1AMeYE
     git config --global core.editor "code -w"
 ## Verificar configurações feitas
     git config --list
-## Configurar nova chave GitHub
+## Configurar nova chave GitHub (criando chave SSH)
     ssh-keygen -t rsa -b 4096 -C "julianodavi.jb@hotmail.com"
+## Pegando chave criada
+### Copiar a chave para Gitub
+    cat ~/.ssh/id_rsa.pub
 ## Iniciar o agente ssh em background
     eval `ssh-agent -s`
     ssh-add ~/.ssh/id_ed25519
