@@ -233,3 +233,22 @@ Fonte:
 https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git
 https://www.git-scm.com/docs/git-config
 https://www.youtube.com/watch?v=WVLhm1AMeYE
+
+# 8 - [CONFIGURAÇÃO INICIAL GIT COM GITBASH]
+
+    git config --global user.name "JB Work"
+    git config --global user.email julianodavi.jb@hotmail.com
+## Configurar para VSCode
+    git config --global core.editor "code -w"
+## Verificar configurações feitas
+    git config --list
+## Configurar nova chave GitHub
+    ssh-keygen -t rsa -b 4096 -C "julianodavi.jb@hotmail.com"
+## Iniciar o agente ssh em background
+    eval `ssh-agent -s`
+    ssh-add ~/.ssh/id_ed25519
+## Pegando dados do repositorio online GitHub
+### Na pasta que deseja clonar os dados execulte o cod:
+    git clone <link ssh ou http>
+
+
