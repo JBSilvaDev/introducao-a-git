@@ -1,3 +1,30 @@
+# 0 - Configurando Git to up GitHub with SSH key
+
+## Usar comando 
+    $ ssh-keygen -t rsa -b 4096 -C "julianodavi.jb@hotmail.com"
+## Para pegar a chave use o comando
+    $ cd ~/.ssh
+    $ cat ~/.ssh/id_rsa.pub
+### A chave SSH ira aparecer no GITBASH, copiar a chave e informar no perfil do github SSH ---- > https://github.com/settings/keys > SSH and GPG keys
+
+## Usar comando apos inserir o SSH no GitHub
+    $ eval `ssh-agent -s`
+    $ ssh-add ~/.ssh/id_rsa
+    $ git config --global user.email "julianodavi.jb@hotmail.com"
+    $ git config --global user.name "JB Silva"
+
+
+## Testando se a chave SSH esta OK upando um arquivo qualquer em um novo diretorio no github
+    $ git init
+    $ git add .
+    $ git commit -m "first commit"
+    $ git branch -M main
+    $ git remote add origin git@github.com:JB3005/Nome do diretorio.git
+    $ git push -u origin main
+
+
+-----------------------------------------------------------------------
+
 # 1 - [COMANDOS DO DIA-A-DIA]
 
 ## Inicializar o git para rastrear arquivos locais de um projeto (sempre que iniciar um novo projeto)
@@ -5,9 +32,9 @@
 
 ## Verificar se existe alguma pendência a ser adicionada a HEAD
     $ git status
+    
 
-## Atualiza o repositório local com as alterações publicadas/atualizadas que já estão no
-github
+## Atualiza o repositório local com as alterações publicadas/atualizadas que já estão no github
     $ git pull origin main
 
 ## Exibe o relatorio de alterações realizadas no projeto
@@ -16,8 +43,7 @@ github
 ## Adiciona as alterações na HEAD (sempre após alterar os códigos)
     $ git add .
 
-## Comitar as alterações realizadas e já adicionadas (sempre após realizar o comando "git add
-.")
+## Comitar as alterações realizadas e já adicionadas (sempre após realizar o comando "git add.")
     $ git commit -m "Mensagem aqui"
 
 ## Publicar/subir as alterações para o github para a HEAD main (sempre após realizar o comando "git commit -m "nomedocommit")
@@ -192,19 +218,7 @@ para o github'
 https://github.com/usuario/repositorio/settings/access
 
 -----------------------------------------------------------------------
-
-# 6 - [CONFIGURANDO O GIT]
-
-## Dar acesso ao computado local para acessar a conta do github
-### Instalar o GITBASH https://www.git-scm.com/downloads
-
-## [USAR MULTIPLOS USUÁRIOS]
-https://blog.developer.atlassian.com/different-ssh-keys-multiple-bitbucket-accounts/
-### Acessar o gitbash e digitar o comando $ ssh-keygen
-
-## Abrir o diretorio que ele informar, dentro tera um arquivo id_rsa com uma chave
-### Copiar a chave e informar no perfil do github SSH ---- > https://github.com/settings/keys > SSH and GPG keys criar um projeto no github com pasta e usar o comando direcionando o projeto ao link da pasta criada
-    $ git remote add origin https://github.com/...git
+# 6 Upando e clonando arquivos para o GitHub
 
 ## Esse comando só é executado a primeira vez, para subir o projeto para o GITHUB -> Subir o projeto inicial pelo terminal ou manual direto no github
     $ git push -u origin main
@@ -214,7 +228,6 @@ https://blog.developer.atlassian.com/different-ssh-keys-multiple-bitbucket-accou
 
 ## Atualizar o projeto local com as alterações do servidor sempre que for iniciar o desenvolvimento
     $ git pull origin main
-
 -----------------------------------------------------------------------
 
 # 7 - [CRIANDO ALIAS PARA COMANDOS GIT]
@@ -253,5 +266,3 @@ https://www.youtube.com/watch?v=WVLhm1AMeYE
 ## Pegando dados do repositorio online GitHub
 ### Na pasta que deseja clonar os dados execulte o cod:
     git clone <link ssh ou http>
-
-
