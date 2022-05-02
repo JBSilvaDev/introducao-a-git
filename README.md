@@ -2,14 +2,18 @@
 
 ## Usar comando 
     $ ssh-keygen -t rsa -b 4096 -C "julianodavi.jb@hotmail.com"
-## Para pegar a chave use o comando
+    $ ssh-keygen -t ed25519 -C "julianodavi.jb@hotmail.com"
+## Para pegar a chave use o comando (Entrar na pasta para pegar nome do arquivo correto)
     $ cd ~/.ssh
-    $ cat ~/.ssh/id_rsa.pub
+    $ cat ~/.ssh/id_rsa.pub 
+    ou
+    $ cd ~/.ssh
+    $ cat ~/.ssh/id_ed25519.pub
 ### A chave SSH ira aparecer no GITBASH, copiar a chave e informar no perfil do github SSH ---- > https://github.com/settings/keys > SSH and GPG keys
 
 ## Usar comando apos inserir o SSH no GitHub
     $ eval `ssh-agent -s`
-    $ ssh-add ~/.ssh/id_rsa
+    $ ssh-add ~/.ssh/<Nome do arquivo Id>
     $ git config --global user.email "julianodavi.jb@hotmail.com"
     $ git config --global user.name "JB Silva"
 
