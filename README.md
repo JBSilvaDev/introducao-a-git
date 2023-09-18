@@ -63,6 +63,9 @@
 ## Configurar o email do usuario do git'
     $ git config --global user.email email@example.com
 
+## Em caso de erro no certificado'
+    $ git config --global http.sslVerify false
+
 ## Exibe todas as alterações realizadas no projeto'
     $ git log
 
