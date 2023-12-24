@@ -37,6 +37,7 @@ adicionar arquivo ou modificação
 terminal `git add arquivoNome.py`
 terminal `git commit arquivoNome.py -m "menssagem de commit`
 terminal `git push`
-adicionar todas modificação de uma vez
+adicionar todas modificação adicionadas com add
 terminal `git add .`
-terminal `git commit -m "menssagem de commit"`
+terminal `git commit -m "menssagem de commit"` (Sem o ".")
+terminal `git push`
