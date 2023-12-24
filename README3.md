@@ -1,5 +1,8 @@
 # branchs
 
+para visualizar as branchs no projeto
+terminal `git branch`
+
 para criar uma nova branch
 terminal `git checkout -b branchName`
 
