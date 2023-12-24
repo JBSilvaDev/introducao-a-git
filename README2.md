@@ -39,4 +39,4 @@ terminal `git commit arquivoNome.py -m "menssagem de commit`
 terminal `git push`
 adicionar todas modificação de uma vez
 terminal `git add .`
-terminal `git commit -m`
+terminal `git commit -m "menssagem de commit"`
