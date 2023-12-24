@@ -1,8 +1,8 @@
 # 0 - Configurando Git to up GitHub with SSH key
 
 ## Usar comando 
-    $ ssh-keygen -t rsa -b 4096 -C "julianodavi.jb@hotmail.com"
-    $ ssh-keygen -t ed25519 -C "julianodavi.jb@hotmail.com"
+    $ ssh-keygen -t rsa -b 4096 -C "jbsilva.dev@outlook.com"
+    $ ssh-keygen -t ed25519 -C "jbsilva.dev@outlook.com"
 ## Para pegar a chave use o comando (Entrar na pasta para pegar nome do arquivo correto)
     $ cd ~/.ssh
     $ cat ~/.ssh/id_rsa.pub 
@@ -14,7 +14,7 @@
 ## Usar comando apos inserir o SSH no GitHub
     $ eval `ssh-agent -s`
     $ ssh-add ~/.ssh/<Nome do arquivo Id>
-    $ git config --global user.email "julianodavi.jb@hotmail.com"
+    $ git config --global user.email "jbsilva.dev@outlook.com"
     $ git config --global user.name "JB Silva"
 
 
@@ -257,13 +257,13 @@ https://www.youtube.com/watch?v=WVLhm1AMeYE
 # 8 - [CONFIGURAÇÃO INICIAL GIT COM GITBASH]
 
     git config --global user.name "JB Work"
-    git config --global user.email julianodavi.jb@hotmail.com
+    git config --global user.email jbsilva.dev@outlook.com
 ## Configurar para VSCode
     git config --global core.editor "code -w"
 ## Verificar configurações feitas
     git config --list
 ## Configurar nova chave GitHub (criando chave SSH)
-    ssh-keygen -t rsa -b 4096 -C "julianodavi.jb@hotmail.com"
+    ssh-keygen -t rsa -b 4096 -C "jbsilva.dev@outlook.com"
 ## Pegando chave criada
 ### Copiar a chave para Gitub
     cat ~/.ssh/id_rsa.pub
