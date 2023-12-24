@@ -1,3 +1,4 @@
+Download [Git aqui](https://git-scm.com/downloads)
 # Configurando Git to up GitHub with SSH key
 
 ## Usar comando 
