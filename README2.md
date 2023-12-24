@@ -1,6 +1,11 @@
 Add colaborador a um projeto direto no site do github
 projeto>settings>collaborators
 
+Configurando git local
+terminal `git config --global user.name "JB Silva"`
+terminal `git config --global user.email "jbsilva.dev@outlook.com"`
+terminal `git config --global http.sslVerify false` (evita erro de certificado nos commits)
+
 clonar repositorio
 repositorio>code>https - copiar link
 terminal `git clone link.git`
@@ -33,7 +38,7 @@ terminal `git restore --source codHash arquivoNome.py` (para restaurar apenas um
 terminal `git commit . -m "menssagem de commit"`
 terminal `git push`
 
-adicionar arquivo ou modificação
+adicionar arquivos ou modificação
 terminal `git add arquivoNome.py`
 terminal `git commit arquivoNome.py -m "menssagem de commit`
 terminal `git push`
@@ -41,3 +46,6 @@ adicionar todas modificação adicionadas com add
 terminal `git add .`
 terminal `git commit -m "menssagem de commit"` (Sem o ".")
 terminal `git push`
+
+desafaz o add
+terminal `git reset HEAD arquivoNome.py`
