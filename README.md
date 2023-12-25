@@ -10,7 +10,7 @@ Download [Git aqui](https://git-scm.com/downloads)
 - *ou*
 - `cd ~/.ssh`
 - `cat ~/.ssh/id_ed25519.pub`
-## A chave SSH ira aparecer no GITBASH, copiar a chave e informar no perfil do github SSH ---- > https://github.com/settings/keys > SSH and GPG keys
+### A chave SSH ira aparecer no GITBASH, copiar a chave e informar no perfil do github SSH ---- > https://github.com/settings/keys > SSH and GPG keys
 
 ## Usar comando apos inserir o SSH no GitHub
 - `eval ssh-agent -s`
