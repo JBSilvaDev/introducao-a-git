@@ -36,6 +36,7 @@ Download [Git aqui](https://git-scm.com/downloads)
 > Envia repo local para repo github
 - `git init`
 - `git add .` (Adiciona todos itens do projeto)
+- `git branch -M main`
 - `git commit . -m "menssagem de commit"` (Adiciona e registra todas as alterações no repo local)
 - `git remote add origin link.git`
 - `git push origin main`
@@ -76,6 +77,7 @@ Download [Git aqui](https://git-scm.com/downloads)
 - `git push origin main --follow-tags` (Upload da versão)
 > Branchs no repositorio
 - `git branch` (Verifica branchs existentes)
+- `git branch -M main` (Seleciona a branch para fazer upload dos arquivos)
 - `git checkout -b branchName` (Cria nova branch)
 - `git switch branchName` (Alterna entre branchs)
 - `git merge branchName` (Mescla branchs com a principal, necessario esta com a main setada)
