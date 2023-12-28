@@ -33,6 +33,12 @@ Download [Git aqui](https://git-scm.com/downloads)
 - `git add arquivoNome.py` (Adiciona apenas um item)
 - `git commit arquivoNome.py -m "menssagem de commit` (Registra as alterações no repo local)
 - `git commit . -m "menssagem de commit"` (Adiciona e registra todas as alterações no repo local)
+> Envia repo local para repo github
+- `git init`
+- `git add .` (Adiciona todos itens do projeto)
+- `git commit . -m "menssagem de commit"` (Adiciona e registra todas as alterações no repo local)
+- `git remote add origin link.git`
+- `git push origin main`
 > Salva os registros no repo origem
 - `git push` (Salva na branch princimal *main*)
 - `git push origin branchName` (Salva em branch especifica)
